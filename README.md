@@ -1,65 +1,59 @@
 # Medical Data Visualizer
 
-This project analyzes medical examination data and creates visual summaries using Python. It is based on the freeCodeCamp Data Analysis with Python project structure, with a small sample dataset included so the project can run locally.
+This is a Python practice project for working with medical examination data. I used Pandas for data cleaning and Seaborn/Matplotlib for the charts.
 
-## Goal
+The project is based on the freeCodeCamp Medical Data Visualizer exercise. I included a small CSV file in this repository so the code can be run and checked easily.
 
-The goal is to explore how basic health indicators relate to cardiovascular disease. The project uses data cleaning, feature engineering, categorical comparison, and correlation analysis.
+## What I worked on
 
-## Dataset
+- Reading a CSV file with Pandas
+- Adding an `overweight` column from height and weight
+- Converting cholesterol and glucose values into simple normal/high values
+- Reshaping the data for a categorical chart
+- Cleaning unusual blood pressure, height, and weight records before making the heatmap
+- Saving the final charts as image files
 
-The dataset file is `medical_examination.csv`.
+## Files
 
-Main columns:
+```text
+README.md
+medical_data_visualizer.py
+main.py
+requirements.txt
+medical_examination.csv
+```
 
-- `id`
-- `age`
-- `gender`
-- `height`
-- `weight`
-- `ap_hi`
-- `ap_lo`
-- `cholesterol`
-- `gluc`
-- `smoke`
-- `alco`
-- `active`
-- `cardio`
+## Columns in the dataset
 
-## Tools
+```text
+id, age, gender, height, weight, ap_hi, ap_lo,
+cholesterol, gluc, smoke, alco, active, cardio
+```
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+## How to run
 
-## What the Project Does
-
-- Reads the medical examination dataset
-- Adds an `overweight` column using BMI logic
-- Normalizes cholesterol and glucose values
-- Creates a categorical plot for selected health indicators
-- Creates a correlation heatmap after removing invalid records
-- Saves output charts as image files
-
-## How to Run
+Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Run the project:
+
+```bash
 python main.py
 ```
 
-After running, the project creates:
+It will create two files:
 
 ```text
 catplot.png
 heatmap.png
 ```
 
-## Note
+## Notes
 
-The included CSV is a small sample dataset for demo and portfolio use. For the full freeCodeCamp project, replace it with the official `medical_examination.csv` dataset.
+The CSV in this repository is a small sample dataset for running the project. For the full freeCodeCamp version, the same code structure can be used with the official `medical_examination.csv` file.
 
 ## Author
 
